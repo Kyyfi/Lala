@@ -692,7 +692,7 @@ local petDropdown = crystalTab:AddDropdown("Select Pet", function(choice)
     selectedPet = choice
 end)
 
-petDropdown:Add("Orange Pegasus")
+petDropdown:Add("Twin Element Birdies")
 petDropdown:Add("Golden Sun Pegasus")
 petDropdown:Add("Darkstorm Elemental Hydra")
 
