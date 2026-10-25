@@ -26,10 +26,10 @@ local Config = {
     HatchEgg       = "Void",
     HatchCount     = 3,
     TeleportIsland = "Spawn",
-    RebirthIndex   = 14,
+    RebirthIndex   = 18,
 }
 
-local Islands = {"Spawn", "Sky Island", "Autumn", "Mushroom", "Desert", "Crystal Cave", "Shadow Realm"}
+local Islands = {"Spawn", "Sky Island", "Autumn", "Mushroom", "Desert", "Crystal Cave", "Shadow Realm", "Volcano", "Heaven"}
 
 -- ═══════════ STATE ═══════════
 local Toggles = {
@@ -261,7 +261,7 @@ MainTab:CreateToggle({
 
 MainTab:CreateDropdown({
     Name = "Rebirth Index",
-    Options = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14"},
+    Options = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18"},
     CurrentOption = {"14"},
     MultipleOptions = false,
     Flag = "RebirthIndex",
@@ -282,7 +282,7 @@ MainTab:CreateToggle({
 
 MainTab:CreateInput({
     Name = "Egg Name",
-    PlaceholderText = "Void",
+    PlaceholderText = "Heaven",
     RemoveTextAfterFocusLost = false,
     Flag = "EggName",
     Callback = function(Text)
@@ -325,7 +325,7 @@ MiscTab:CreateDropdown({
     CurrentOption = {"Spawn"},
     MultipleOptions = false,
     Flag = "TeleportIsland",
-    Callback = function(Option)
+    Callback = function(Option)u
         Config.TeleportIsland = Option[1]
     end,
 })
