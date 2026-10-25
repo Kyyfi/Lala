@@ -325,7 +325,7 @@ MiscTab:CreateDropdown({
     CurrentOption = {"Spawn"},
     MultipleOptions = false,
     Flag = "TeleportIsland",
-    Callback = function(Option)u
+    Callback = function(Option)
         Config.TeleportIsland = Option[1]
     end,
 })
